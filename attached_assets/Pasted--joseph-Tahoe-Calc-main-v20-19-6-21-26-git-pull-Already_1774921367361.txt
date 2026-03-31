@@ -1,0 +1,93 @@
+
+joseph  …/Tahoe-Calc   main    v20.19.6  21:26  git pull
+Already up to date.
+
+joseph  …/Tahoe-Calc   main    v20.19.6  21:26  pnpm --filter @workspace/calculator run build
+npx serve artifacts/calculator/dist/public
+
+> @workspace/calculator@0.0.0 build /home/joseph/Tahoe-Calc/artifacts/calculator
+> vite build --config vite.config.ts
+
+failed to load config from /home/joseph/Tahoe-Calc/artifacts/calculator/vite.config.ts
+error during build:
+Error: PORT environment variable is required but was not provided.
+    at file:///home/joseph/Tahoe-Calc/artifacts/calculator/node_modules/.vite-temp/vite.config.ts.timestamp-1774921316047-806458ae186b8.mjs:10:9
+    at ModuleJob.run (node:internal/modules/esm/module_job:325:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:606:24)
+    at async loadConfigFromBundledFile (file:///home/joseph/Tahoe-Calc/node_modules/.pnpm/vite@7.3.1_@types+node@25.3.5_jiti@2.6.1_lightningcss@1.31.1_tsx@4.21.0_yaml@2.8.2/node_modules/vite/dist/node/chunks/config.js:35909:12)
+    at async bundleAndLoadConfigFile (file:///home/joseph/Tahoe-Calc/node_modules/.pnpm/vite@7.3.1_@types+node@25.3.5_jiti@2.6.1_lightningcss@1.31.1_tsx@4.21.0_yaml@2.8.2/node_modules/vite/dist/node/chunks/config.js:35797:17)
+    at async loadConfigFromFile (file:///home/joseph/Tahoe-Calc/node_modules/.pnpm/vite@7.3.1_@types+node@25.3.5_jiti@2.6.1_lightningcss@1.31.1_tsx@4.21.0_yaml@2.8.2/node_modules/vite/dist/node/chunks/config.js:35764:42)
+    at async resolveConfig (file:///home/joseph/Tahoe-Calc/node_modules/.pnpm/vite@7.3.1_@types+node@25.3.5_jiti@2.6.1_lightningcss@1.31.1_tsx@4.21.0_yaml@2.8.2/node_modules/vite/dist/node/chunks/config.js:35413:22)
+    at async createBuilder (file:///home/joseph/Tahoe-Calc/node_modules/.pnpm/vite@7.3.1_@types+node@25.3.5_jiti@2.6.1_lightningcss@1.31.1_tsx@4.21.0_yaml@2.8.2/node_modules/vite/dist/node/chunks/config.js:33875:19)
+    at async CAC.<anonymous> (file:///home/joseph/Tahoe-Calc/node_modules/.pnpm/vite@7.3.1_@types+node@25.3.5_jiti@2.6.1_lightningcss@1.31.1_tsx@4.21.0_yaml@2.8.2/node_modules/vite/dist/node/cli.js:629:10)
+/home/joseph/Tahoe-Calc/artifacts/calculator:
+ ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  @workspace/calculator@0.0.0 build: `vite build --config vite.config.ts`
+Exit status 1
+npm warn Unknown project config "auto-install-peers". This will stop working in the next major version of npm.
+npm warn Unknown project config "strict-peer-dependencies". This will stop working in the next major version of npm.
+
+   ┌──────────────────────────────────────────┐
+   │                                          │
+   │   Serving!                               │
+   │                                          │
+   │   - Local:    http://localhost:3000      │
+   │   - Network:  http://192.168.1.50:3000   │
+   │                                          │
+   │   Copied local address to clipboard!     │
+   │                                          │
+   └──────────────────────────────────────────┘
+
+ HTTP  3/30/2026 9:42:01 PM ::1 GET /
+ HTTP  3/30/2026 9:42:01 PM ::1 Returned 404 in 47 ms
+^C
+ INFO  Gracefully shutting down. Please wait...
+
+[ble: exit 130]
+
+joseph  …/Tahoe-Calc   main    v20.19.6  21:26  # From project root — build React app
+pnpm --filter @workspace/calculator run build
+
+# Copy built files into Neutralino
+cp -r artifacts/calculator/dist/public/* calc-desktop/resources/
+
+# Enter Neutralino project and run
+cd calc-desktop
+neu run
+
+> @workspace/calculator@0.0.0 build /home/joseph/Tahoe-Calc/artifacts/calculator
+> vite build --config vite.config.ts
+
+failed to load config from /home/joseph/Tahoe-Calc/artifacts/calculator/vite.config.ts
+error during build:
+Error: PORT environment variable is required but was not provided.
+    at file:///home/joseph/Tahoe-Calc/artifacts/calculator/node_modules/.vite-temp/vite.config.ts.timestamp-1774921346389-3e6013c0fc77c.mjs:10:9
+    at ModuleJob.run (node:internal/modules/esm/module_job:325:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:606:24)
+    at async loadConfigFromBundledFile (file:///home/joseph/Tahoe-Calc/node_modules/.pnpm/vite@7.3.1_@types+node@25.3.5_jiti@2.6.1_lightningcss@1.31.1_tsx@4.21.0_yaml@2.8.2/node_modules/vite/dist/node/chunks/config.js:35909:12)
+    at async bundleAndLoadConfigFile (file:///home/joseph/Tahoe-Calc/node_modules/.pnpm/vite@7.3.1_@types+node@25.3.5_jiti@2.6.1_lightningcss@1.31.1_tsx@4.21.0_yaml@2.8.2/node_modules/vite/dist/node/chunks/config.js:35797:17)
+    at async loadConfigFromFile (file:///home/joseph/Tahoe-Calc/node_modules/.pnpm/vite@7.3.1_@types+node@25.3.5_jiti@2.6.1_lightningcss@1.31.1_tsx@4.21.0_yaml@2.8.2/node_modules/vite/dist/node/chunks/config.js:35764:42)
+    at async resolveConfig (file:///home/joseph/Tahoe-Calc/node_modules/.pnpm/vite@7.3.1_@types+node@25.3.5_jiti@2.6.1_lightningcss@1.31.1_tsx@4.21.0_yaml@2.8.2/node_modules/vite/dist/node/chunks/config.js:35413:22)
+    at async createBuilder (file:///home/joseph/Tahoe-Calc/node_modules/.pnpm/vite@7.3.1_@types+node@25.3.5_jiti@2.6.1_lightningcss@1.31.1_tsx@4.21.0_yaml@2.8.2/node_modules/vite/dist/node/chunks/config.js:33875:19)
+    at async CAC.<anonymous> (file:///home/joseph/Tahoe-Calc/node_modules/.pnpm/vite@7.3.1_@types+node@25.3.5_jiti@2.6.1_lightningcss@1.31.1_tsx@4.21.0_yaml@2.8.2/node_modules/vite/dist/node/cli.js:629:10)
+/home/joseph/Tahoe-Calc/artifacts/calculator:
+ ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  @workspace/calculator@0.0.0 build: `vite build --config vite.config.ts`
+Exit status 1
+cp: cannot stat 'artifacts/calculator/dist/public/*': No such file or directory
+./  ../  bin/  .github/  .gitignore  LICENSE  neutralino.config.json  neutralinojs.log  README.md  resources/  .tmp/
+neu: INFO Starting process: neutralino-linux_x64  --load-dir-res --path=. --export-auth-info --neu-dev-extension --neu-dev-auto-reload
+INFO 2026-03-30 21:42:26,825 Auth info was exported to ./.tmp/auth_info.json ../api/debug/debug.cpp:17 joseph@unknown-host
+
+(neutralino-linux_x64:67163): libayatana-appindicator-WARNING **: 21:42:27.535: Unable to connect to the Notification Watcher: GDBus.Error:org.freedesktop.DBus.Error.UnknownObject: No such object path '/StatusNotifierWatcher'
+neu: INFO neu CLI connected with the application.
+neu: INFO neutralino-linux_x64 was stopped with success code 0
+
+joseph  …/Tahoe-Calc   main    v20.19.6  21:26  # nope =(
+
+
+
+
+
+
+
+
+
