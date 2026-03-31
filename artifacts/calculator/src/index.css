@@ -1,0 +1,49 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme inline {
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+
+  --font-sans: var(--app-font-sans);
+  --font-mono: var(--app-font-mono);
+}
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 0 0% 3.9%;
+  --app-font-sans: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
+  --app-font-mono: 'SF Mono', 'Menlo', monospace;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: var(--app-font-sans);
+    background: #1a1a1a;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@layer utilities {
+  .calc-btn {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    user-select: none;
+    cursor: pointer;
+    transition: filter 80ms ease, transform 80ms ease;
+  }
+
+  .calc-btn:active {
+    filter: brightness(1.2);
+    transform: scale(0.97);
+  }
+}
