@@ -1,0 +1,129 @@
+
+joseph  …/Tahoe-Calc   main    v20.19.6  21:26  pnpm --filter @workspace/calculator run build
+
+> @workspace/calculator@0.0.0 build /home/joseph/Tahoe-Calc/artifacts/calculator
+> vite build --config vite.config.ts
+
+failed to load config from /home/joseph/Tahoe-Calc/artifacts/calculator/vite.config.ts
+error during build:
+Error: PORT environment variable is required but was not provided.
+    at file:///home/joseph/Tahoe-Calc/artifacts/calculator/node_modules/.vite-temp/vite.config.ts.timestamp-1774920941537-93b4ff3d7548f.mjs:10:9
+    at ModuleJob.run (node:internal/modules/esm/module_job:325:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:606:24)
+    at async loadConfigFromBundledFile (file:///home/joseph/Tahoe-Calc/node_modules/.pnpm/vite@7.3.1_@types+node@25.3.5_jiti@2.6.1_lightningcss@1.31.1_tsx@4.21.0_yaml@2.8.2/node_modules/vite/dist/node/chunks/config.js:35909:12)
+    at async bundleAndLoadConfigFile (file:///home/joseph/Tahoe-Calc/node_modules/.pnpm/vite@7.3.1_@types+node@25.3.5_jiti@2.6.1_lightningcss@1.31.1_tsx@4.21.0_yaml@2.8.2/node_modules/vite/dist/node/chunks/config.js:35797:17)
+    at async loadConfigFromFile (file:///home/joseph/Tahoe-Calc/node_modules/.pnpm/vite@7.3.1_@types+node@25.3.5_jiti@2.6.1_lightningcss@1.31.1_tsx@4.21.0_yaml@2.8.2/node_modules/vite/dist/node/chunks/config.js:35764:42)
+    at async resolveConfig (file:///home/joseph/Tahoe-Calc/node_modules/.pnpm/vite@7.3.1_@types+node@25.3.5_jiti@2.6.1_lightningcss@1.31.1_tsx@4.21.0_yaml@2.8.2/node_modules/vite/dist/node/chunks/config.js:35413:22)
+    at async createBuilder (file:///home/joseph/Tahoe-Calc/node_modules/.pnpm/vite@7.3.1_@types+node@25.3.5_jiti@2.6.1_lightningcss@1.31.1_tsx@4.21.0_yaml@2.8.2/node_modules/vite/dist/node/chunks/config.js:33875:19)
+    at async CAC.<anonymous> (file:///home/joseph/Tahoe-Calc/node_modules/.pnpm/vite@7.3.1_@types+node@25.3.5_jiti@2.6.1_lightningcss@1.31.1_tsx@4.21.0_yaml@2.8.2/node_modules/vite/dist/node/cli.js:629:10)
+/home/joseph/Tahoe-Calc/artifacts/calculator:
+ ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  @workspace/calculator@0.0.0 build: `vite build --config vite.config.ts`
+Exit status 1
+[ble: exit 1]
+
+joseph  …/Tahoe-Calc   main    v20.19.6  21:26  npx serve artifacts/calculator/dist/public
+npm warn Unknown project config "auto-install-peers". This will stop working in the next major version of npm.
+npm warn Unknown project config "strict-peer-dependencies". This will stop working in the next major version of npm.
+Need to install the following packages:
+serve@14.2.6
+Ok to proceed? (y) y
+
+
+   ┌──────────────────────────────────────────┐
+   │                                          │
+   │   Serving!                               │
+   │                                          │
+   │   - Local:    http://localhost:3000      │
+   │   - Network:  http://192.168.1.50:3000   │
+   │                                          │
+   │   Copied local address to clipboard!     │
+   │                                          │
+   └──────────────────────────────────────────┘
+
+ HTTP  3/30/2026 9:36:07 PM ::1 GET /
+ HTTP  3/30/2026 9:36:07 PM ::1 Returned 404 in 92 ms
+ HTTP  3/30/2026 9:36:08 PM ::1 GET /favicon.ico
+ HTTP  3/30/2026 9:36:08 PM ::1 Returned 404 in 3 ms
+^C
+ INFO  Gracefully shutting down. Please wait...
+
+[ble: exit 130]
+
+joseph  …/Tahoe-Calc   main    v20.19.6  21:26  neu create calc-desktop
+cd calc-desktop
+neu: INFO Checking if neutralinojs/neutralinojs-minimal is a valid Neutralinojs app template...
+neu: INFO Downloading neutralinojs/neutralinojs-minimal template to calc-desktop directory...
+neu: INFO Extracting template zip file...
+neu: INFO Downloading Neutralinojs binaries..
+neu: INFO Found the latest release tag v6.5.0 for neutralinojs...
+    Downloading binaries: 100.0% (4.72 of 4.72MB)
+neu: INFO Extracting binaries.zip file...
+neu: INFO Finalizing and cleaning temp. files.
+neu: INFO Downloading the Neutralinojs client..
+neu: INFO Found the latest release tag v6.5.0 for neutralino.js...
+neu: INFO Downloading the Neutralinojs types..
+neu: INFO Finalizing and cleaning temp. files...
+-------
+neu: INFO Enter 'cd calc-desktop && neu run' to run your application.
+  _   _            _             _ _             _
+ | \ | | ___ _   _| |_ _ __ __ _| (_)_ __   ___ (_)___
+ |  \| |/ _ \ | | | __| '__/ _' | | | '_ \ / _ \| / __|
+ | |\  |  __/ |_| | |_| | | (_| | | | | | | (_) | \__ \
+ |_| \_|\___|\__,_|\__|_|  \__,_|_|_|_| |_|\___// |___/
+                                               |__/
+./  ../  bin/  .github/  .gitignore  LICENSE  neutralino.config.json  README.md  resources/
+
+joseph  …/Tahoe-Calc   main    v20.19.6  21:26  pnpm --filter @workspace/calculator run build
+
+> @workspace/calculator@0.0.0 build /home/joseph/Tahoe-Calc/artifacts/calculator
+> vite build --config vite.config.ts
+
+failed to load config from /home/joseph/Tahoe-Calc/artifacts/calculator/vite.config.ts
+error during build:
+Error: PORT environment variable is required but was not provided.
+    at file:///home/joseph/Tahoe-Calc/artifacts/calculator/node_modules/.vite-temp/vite.config.ts.timestamp-1774921035396-4fa8b757fbd5a.mjs:10:9
+    at ModuleJob.run (node:internal/modules/esm/module_job:325:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:606:24)
+    at async loadConfigFromBundledFile (file:///home/joseph/Tahoe-Calc/node_modules/.pnpm/vite@7.3.1_@types+node@25.3.5_jiti@2.6.1_lightningcss@1.31.1_tsx@4.21.0_yaml@2.8.2/node_modules/vite/dist/node/chunks/config.js:35909:12)
+    at async bundleAndLoadConfigFile (file:///home/joseph/Tahoe-Calc/node_modules/.pnpm/vite@7.3.1_@types+node@25.3.5_jiti@2.6.1_lightningcss@1.31.1_tsx@4.21.0_yaml@2.8.2/node_modules/vite/dist/node/chunks/config.js:35797:17)
+    at async loadConfigFromFile (file:///home/joseph/Tahoe-Calc/node_modules/.pnpm/vite@7.3.1_@types+node@25.3.5_jiti@2.6.1_lightningcss@1.31.1_tsx@4.21.0_yaml@2.8.2/node_modules/vite/dist/node/chunks/config.js:35764:42)
+    at async resolveConfig (file:///home/joseph/Tahoe-Calc/node_modules/.pnpm/vite@7.3.1_@types+node@25.3.5_jiti@2.6.1_lightningcss@1.31.1_tsx@4.21.0_yaml@2.8.2/node_modules/vite/dist/node/chunks/config.js:35413:22)
+    at async createBuilder (file:///home/joseph/Tahoe-Calc/node_modules/.pnpm/vite@7.3.1_@types+node@25.3.5_jiti@2.6.1_lightningcss@1.31.1_tsx@4.21.0_yaml@2.8.2/node_modules/vite/dist/node/chunks/config.js:33875:19)
+    at async CAC.<anonymous> (file:///home/joseph/Tahoe-Calc/node_modules/.pnpm/vite@7.3.1_@types+node@25.3.5_jiti@2.6.1_lightningcss@1.31.1_tsx@4.21.0_yaml@2.8.2/node_modules/vite/dist/node/cli.js:629:10)
+/home/joseph/Tahoe-Calc/artifacts/calculator:
+ ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  @workspace/calculator@0.0.0 build: `vite build --config vite.config.ts`
+Exit status 1
+[ble: exit 1]
+
+joseph  …/Tahoe-Calc   main    v20.19.6  21:26  fastfetch
+
+                                                                ┌──────────────────────Hardware──────────────────────┐
+                                                                │ ├󰻠 : Intel(R) N95 (4) @ 3.40 GHz
+                                                                │ ├󰍹 : Intel UHD Graphics @ 1.20 GHz [Integrated]
+                                                                │ ├󰑭 : 5.22 GiB / 7.53 GiB (69%)
+                `..---+/---..`                                  └ └󰋊 : 165.13 GiB / 233.38 GiB (71%) - ext4
+            `---.``   ``   `.---.`                              └────────────────────────────────────────────────────┘
+         .--.`        ``        `-:-.
+       `:/:     `.----//----.`     :/-                          ┌──────────────────────Software──────────────────────┐
+      .:.    `---`          `--.`    .:`                          OS: KDE neon User Edition x86_64
+     .:`   `--`                .:-    `:.                       │ ├󰌽 : Linux 6.14.0-36-generic
+    `/    `:.      `.-::-.`      -:`   `/`                      │ ├󰖡 : CKYV402 (5.26)
+    /.    /.     `:++++++++:`     .:    .:                      │ ├󰏗 : 3959 (dpkg), 32 (flatpak), 21 (snap), 1 (brew)
+   `/    .:     `+++++++++++/      /`   `+`                     └ └󰞷 : bash 5.2.21
+   /+`   --     .++++++++++++`     :.   .+:
+   `/    .:     `+++++++++++/      /`   `+`                     󰧨  DE: GNOME 46.0
+    /`    /.     `:++++++++:`     .:    .:                      │ ├󰍁 : sddm 0.21.0 (X11)
+    ./    `:.      `.:::-.`      -:`   `/`                      │ ├󱂬 : Mutter (X11)
+     .:`   `--`                .:-    `:.                       │ ├󰉦 : MacTahoe-Dark-blue
+      .:.    `---`          `--.`    .:`                        └ └󰆍 : konsole 25.8.3
+       `:/:     `.----//----.`     :/-                          └────────────────────────────────────────────────────┘
+         .-:.`        ``        `-:-.
+            `---.``   ``   `.---.`                              ┌────────────────────Uptime / Age / DT────────────────────┐
+                `..---+/---..`                                    ›  OS Age  : 121 days
+                                                                  ›  Uptime  : 3 hours, 11 mins
+                                                                  ›  DateTime  : 2026-03-30 21:37:33
+                                                                └─────────────────────────────────────────────────────────┘
+                                                                  ● ● ● ● ● ● ● ●
+
+joseph  …/Tahoe-Calc   main    v20.19.6  21:26  
+
