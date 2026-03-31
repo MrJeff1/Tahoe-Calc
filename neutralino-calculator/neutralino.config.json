@@ -1,0 +1,37 @@
+{
+  "applicationId": "com.tahoe.calculator",
+  "defaultMode": "window",
+  "url": "/",
+  "documentRoot": "/resources/",
+  "version": "1.0.0",
+  "modes": {
+    "window": {
+      "title": "Calculator",
+      "width": 320,
+      "height": 590,
+      "minWidth": 320,
+      "minHeight": 590,
+      "maxWidth": 320,
+      "maxHeight": 590,
+      "resizable": false,
+      "center": true,
+      "borderless": false,
+      "alwaysOnTop": false,
+      "enableInspector": false,
+      "hidden": false,
+      "maximizable": false,
+      "exitProcessOnClose": true,
+      "useSavedState": false
+    }
+  },
+  "cli": {
+    "binaryName": "calculator",
+    "resourcesPath": "/resources/",
+    "extensionsPath": "/extensions/",
+    "frontendLibrary": {
+      "packageName": "",
+      "devCommand": "",
+      "projectPath": ""
+    }
+  }
+}

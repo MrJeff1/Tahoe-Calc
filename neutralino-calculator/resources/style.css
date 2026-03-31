@@ -1,0 +1,132 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #1c1c1e;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text",
+               "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  user-select: none;
+}
+
+/* ── Layout ─────────────────────────────────────────── */
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: #1c1c1e;
+}
+
+/* ── Title bar ──────────────────────────────────────── */
+
+.titlebar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 18px 6px;
+  -webkit-app-region: drag;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.dot.red    { background: #ff5f57; }
+.dot.yellow { background: #febc2e; }
+.dot.green  { background: #28c840; }
+
+/* ── Display ────────────────────────────────────────── */
+
+.display {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 0 20px 14px;
+  min-height: 90px;
+  overflow: hidden;
+}
+
+.expression {
+  color: rgba(255, 255, 255, 0.42);
+  font-size: 0.95rem;
+  font-weight: 300;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  min-height: 1.3em;
+  margin-bottom: 2px;
+}
+
+.result {
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 3.4rem;
+  font-weight: 300;
+  letter-spacing: -0.035em;
+  line-height: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  transition: font-size 120ms ease;
+}
+
+.result.sm  { font-size: 2.6rem; }
+.result.xs  { font-size: 2.0rem; }
+
+/* ── Button grid ────────────────────────────────────── */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 0 13px 15px;
+}
+
+/* ── Base button ────────────────────────────────────── */
+
+.btn {
+  height: 65px;
+  border: none;
+  border-radius: 9999px;
+  font-family: inherit;
+  font-size: 1.45rem;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: filter 60ms ease, transform 60ms ease;
+  -webkit-font-smoothing: antialiased;
+  color: #ffffff;
+}
+
+.btn:active {
+  filter: brightness(1.25);
+  transform: scale(0.94);
+}
+
+/* ── Button variants ────────────────────────────────── */
+
+.btn.digit  { background: #3a3a3c; }
+.btn.fn     { background: #636366; font-size: 1.3rem; }
+.btn.op     { background: #ff9f0a; }
+
+/* backspace icon sizing */
+.btn[data-action="backspace"] { font-size: 1.15rem; }
